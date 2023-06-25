@@ -7,12 +7,11 @@
 
 
 ## Descripción
-Mi proyecto es un montecargas que al presionar el boton subir/ bajar muestra en el display y en la consola en que piso se encuentra.
-Con el botón de pausa es posible detener el movimiento en cualquier momento.
+Mi proyecto es un detector de incendios que posee un sensor de temperatura que moviliza un servo si se encuentra en más de 60 grados. Tambien posee un control remoto que da inicio y fin al programa y permite al usuario elegir la estacion del año segun el boton presionado. 1 = invierno, 2 = verano, 3 = primavera, 4 = otoño.
 
 ## TOTAL DE FUNCIONES: 5
 ## Función principal
-Se inicializan las variables correspondientes, el servo y  el control IR para que reciba los botones presionados. En el caso de que se presione el boton ENCENDIDO, la bandera del sistema se pone en TRUE y el sistema de incendios se da por comenzado. En el caso de que se presione el boton STOP el sistema se pone en FALSE y el sistema de incendios se apaga.
+Se inicializan las variables correspondientes, el servo, el sensor de temperatura y  el control IR para que reciba los botones presionados del control. En el caso de que se presione el boton ENCENDIDO, la bandera del sistema se pone en TRUE y el sistema de incendios se da por comenzado. En el caso de que se presione el boton STOP el sistema se pone en FALSE y el sistema de incendios se apaga.
 
 ~~~ C 
 void loop()
